@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Why I want to contribute to DICOM learning · Jianlong Chen</title>
+  <meta name="description" content="Why I want to organize DICOM concepts and small tools for learners—without translating the standard, which remains the gold source.">
+  <meta name="author" content="Jianlong Chen">
+  <meta name="theme-color" content="#1b322e">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,560;1,9..144,500&family=Noto+Serif+SC:wght@400;500&family=Outfit:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/site.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <div class="shell">
+    <aside class="side">
+      <p class="side-mark" aria-hidden="true">陈</p>
+      <a class="name" href="../index.html">Jianlong Chen</a>
+      <p class="aka">Jeremy</p>
+      <p class="role-line">Software engineer</p>
+      <p class="place">Stuart Park, Darwin NT</p>
+      <ul class="nav">
+        <li><a href="../index.html#work">Work</a></li>
+        <li><a href="../index.html#practice">Practice</a></li>
+        <li><a href="../index.html#study">Study</a></li>
+        <li><a href="./" aria-current="page">Notes</a></li>
+      </ul>
+      <div class="contact">
+        <p class="kicker">Contact</p>
+        <p><a href="mailto:jianlong.my@gmail.com">jianlong.my@gmail.com</a></p>
+        <p><a href="https://www.linkedin.com/in/jianlong-chen-813344424/" rel="me">LinkedIn</a></p>
+      </div>
+    </aside>
+
+    <main id="content" class="main">
+      <a class="back" href="./">All notes</a>
+      <header class="post-header">
+        <p class="kicker">Note</p>
+        <h1>Why I want to contribute to DICOM learning</h1>
+        <p class="post-meta">18 October 2026 · 6 min read · EN / 中文</p>
+      </header>
+      <div class="prose">
+        <div lang="en">
+          <p>I started building DR workstation software in 2017. In 2019 I moved to MG workstations and stayed with that work for years. Through both roles, DICOM was not a side topic. It was the language the devices spoke, and the language I had to learn carefully enough to ship software other people could trust.</p>
+          <p>At the beginning I thought DICOM was mainly a file format: open an image, read some tags, display a pixel matrix. That was only the entrance. Later came the network side of the standard, and with it a long list of ideas that refuse to stay in one neat box: Sequence, LUT, GSPS, Presentation Context, Abstract Syntax, Transfer Syntax, Structured Report, Association Negotiation. Each one makes sense once you have lived with it. Together they feel endless.</p>
+          <p>The Chinese DICOM community already has people who carried this load before me. I learned step by step from writers such as <a href="https://blog.csdn.net/zssureqh" rel="noopener">zssure</a>, whose posts once made a dense standard feel approachable. Their work matters. It also seems quieter now than it used to. That gap is part of why I want to add my own small share, rather than wait for someone else to resume the trail.</p>
+          <p>I should be clear about what I will not do. I am not translating the DICOM standard. Engineers who need to implement against it should read the official text themselves. That document is the gold source: the most accurate reference, and the only one that settles an argument when implementations disagree. A secondary translation cannot replace it, and I will not pretend otherwise.</p>
+          <p>What I will try to do is different. I want to organize the concepts into a usable map—something technical people and non-technical people can both hold in mind before they go deeper. A salesperson, a product manager, a new developer, and a tired debug session all need a shared skeleton of what DICOM is about. After that map, the standard becomes less like fog and more like a place you can navigate. Alongside the writing, I also plan to publish small practical DICOM tools: the kind of utilities that save a morning when you are checking a tag, a transfer syntax, or a negotiation detail.</p>
+          <p>I am not chasing a reputation as an expert. I only want to leave a little help for people who are still struggling on this road—the same road I walked when the file format turned into a network of ideas. If one clearer framework, or one small tool, shortens that struggle, the work is already worth doing.</p>
+        </div>
+
+        <hr class="lang-break" aria-hidden="true">
+        <p class="lang-label" lang="zh-Hans">中文</p>
+
+        <div class="prose-zh" lang="zh-Hans">
+          <h2 class="post-title-zh">为什么我想为 DICOM 学习社区做一点贡献</h2>
+          <p>我从 2017 年开始做 DR 工作站软件开发，2019 年跳槽后继续做 MG 工作站软件。这些年里，DICOM 从来不是边角知识。它是设备之间说话的语言，也是我必须学到足以交付可靠软件的那一层基础。</p>
+          <p>刚接触时，我以为 DICOM 主要是一种文件格式：打开图像、读标签、显示像素。那其实只是入口。后来才慢慢碰到网络协议这一侧，以及一长串很难塞进同一个框里的概念：Sequence、LUT、GSPS、Presentation Context、Abstract Syntax、Transfer Syntax、Structured Report、Association Negotiation。单独看，每一个都能讲通；合在一起，却像没有尽头。</p>
+          <p>中文 DICOM 社区里，其实早有人在扛这件事。我当年就是靠 <a href="https://blog.csdn.net/zssureqh" rel="noopener">zssure</a> 这类博主的文章，一步一步学起来的。他们的贡献很重要。只是这些年更新似乎少了。正因为如此，我更想凭自己的一己之力补上一点力量，而不是等别人重新把路走热。</p>
+          <p>有一件事需要先说清楚：我不会去做 DICOM 标准的翻译。技术人员若要真正落地实现，应当自行阅读 DICOM 标准原文。那是最准确、也最不容易走偏的金标准；实现细节起争议时，最终也只能回到原文。二手翻译替代不了它，我也不会假装能替代。</p>
+          <p>我真正想做的，是另一件事。把知识概念梳理成一张能用的地图，让技术人员和非技术人员都能先有一个大体框架，再决定往哪里深挖。销售、产品、新人工程师，以及凌晨还在排查协商问题的人，都需要同一具关于 DICOM 的骨架。有了骨架，标准就少一点像雾，多一点像可以走路的地方。除了文字，我也会陆续输出一些 DICOM 实用小工具——那种在核对标签、传输语法或协商细节时，能省掉一个上午的小东西。</p>
+          <p>我不追求成为大佬。我只想为还在这条路上挣扎的人，提供一点学习上的帮助——就像当年的我，从“它是一个文件”走到“它是一整套系统之间的协议”。如果一张更清楚的知识框架，或一个小工具，能让那段挣扎短一点，这件事就已经值得做。</p>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
